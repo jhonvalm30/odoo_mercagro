@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<openerp>
+
+    <data noupdate="0">
+
+        <record model="registroclientes_cedula" id="cedula_ciudadnia">
+            <field name="name">Cédula de ciudadania</field>
+        </record>
+
+        <record model="registroclientes_cedula" id="cedula_extranjera">
+            <field name="name">Cédula extranjera</field>
+        </record>
+
+        <record model="registroclientes_cedula" id="pasaporte">
+            <field name="name">Pasaporte</field>
+        </record>
+
+        <record model="registroclientes_cedula" id="tarjeta_identidad">
+            <field name="name">Tarjeta de identidad</field>
+        </record>
+    </data>
+
+</openerp>

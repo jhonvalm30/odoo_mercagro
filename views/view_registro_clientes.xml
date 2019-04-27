@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+    <openerp>
+
+        <data>
+
+            <menuitem id="menu_registro_clientes" name="Registro Clientes" sequence="10"/>
+            <menuitem id="menu_registro_clientes_configuracion" parent="menu_registro_clientes" name="Configuraciòn" sequence="70"/>
+
+            <!-- Menu tipo de identificaciòn-->
+
+            <act_window id="action_registro_clientes_tipo_identificacion"
+                        name="Identificacion"
+                        res_model="registroclientes_cedula"
+                        view_mode="tree,form"/>
+
+             <menuitem id="menu_registro_clientes_tipoidentificacion" name="tipo_identificacion"
+                       parent="menu_registro_clientes_configuracion"
+                       sequence="10"
+                       action="action_registro_clientes_tipo_identificacion"/>
+        </data>
+
+    </openerp>
