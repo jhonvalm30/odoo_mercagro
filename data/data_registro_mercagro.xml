@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<openerp>
+
+    <data noupdate="0">
+
+        <!-- Data Producto -->
+
+        <record model="registro.producto" id="producto_1">
+            <field name="producto_id">1</field>
+            <field name="name">Naranja</field>
+            <field name="peso">10</field>
+            <field name="fecha_cosecha">30/04/2019</field>
+        </record>
+
+        <record model="registro.producto" id="producto_2">
+            <field name="producto_id">2</field>
+            <field name="name">Mandarina</field>
+            <field name="peso">5</field>
+            <field name="fecha_cosecha">12/03/2019</field>
+        </record>
+
+        <record model="registro.producto" id="producto_3">
+            <field name="producto_id">3</field>
+            <field name="name">Aguacate</field>
+            <field name="peso">30</field>
+            <field name="fecha_cosecha">15/02/2019</field>
+        </record>
+
+        <!-- End Data Producto -->
+
+        <!-- Data Finca -->
+
+        <record model="registro.finca" id="finca_1">
+            <field name="finca_id">1</field>
+            <field name="name">Finca Bolivia</field>
+            <field name="ubicacion">Km 41</field>
+            <field name="lote">100 x 150</field>
+        </record>
+
+        <record model="registro.finca" id="finca_2">
+            <field name="finca_id">2</field>
+            <field name="name">Finca Rivera</field>
+            <field name="ubicacion">Santagueda Km 5</field>
+            <field name="lote">95 x 30</field>
+        </record>
+
+         <record model="registro.finca" id="finca_3">
+            <field name="finca_id">3</field>
+            <field name="name">Finca La Manuela</field>
+            <field name="ubicacion">Km La Manuela</field>
+            <field name="lote">100 x 150</field>
+        </record>       
+
+        <!-- End Data Finca -->
+
+        <!-- Data Propietarios -->
+
+        <record model="registro.propietario" id="propietario_1">
+            <field name="propietario_id">1</field>
+            <field name="cedula">12345</field>
+            <field name="name">Fernando Lopez</field>
+            <field name="telefono">3111234567</field>
+        </record>
+
+        <record model="registro.propietario" id="propietario_2">
+            <field name="propietario_id">2</field>
+            <field name="cedula">12346</field>
+            <field name="name">Diego Garcìa</field>
+            <field name="telefono">3123458769</field>
+        </record>
+
+        <record model="registro.propietario" id="propietario_3">
+            <field name="propietario_id">3</field>
+            <field name="cedula">120989</field>
+            <field name="name">Laura Ramirez</field>
+            <field name="telefono">3149804671</field>
+        </record>
+
+        <!-- End Data Propietarios -->
+
+        <!-- Data Clientes -->
+
+        <record model="registro.cliente" id="cliente_1">
+            <field name="cliente_id">1</field>
+            <field name="cedula">3178965</field>
+            <field name="name">German Bedoya</field>
+            <field name="telefono">3111232186</field>
+            <field name="ciudad">Manizales</field>
+            <field name="direccion">Cra 31 #89 - 21</field>
+        </record>
+
+        <record model="registro.cliente" id="cliente_2">
+            <field name="cliente_id">2</field>
+            <field name="cedula">7865473</field>
+            <field name="name">Gabriela Gomez</field>
+            <field name="telefono">3124723291</field>
+            <field name="ciudad">Pereira</field>
+            <field name="direccion">Cra 67 #98 - 21</field>
+        </record>
+
+        <record model="registro.cliente" id="cliente_3">
+            <field name="cliente_id">3</field>
+            <field name="cedula">76193003</field>
+            <field name="name">Luis Daniel Peralta</field>
+            <field name="telefono">3167223356</field>
+            <field name="ciudad">Armenia</field>
+            <field name="direccion">Cra 56 #98 - 1</field>
+        </record>
+
+        <!-- End Data Clientes -->
+    </data>
+
+</openerp>
