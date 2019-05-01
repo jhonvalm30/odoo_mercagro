@@ -2,7 +2,7 @@
 from odoo import api, fields, models
 
 class registro_cliente(models.Model):
-    _name = 'registro.propietario'
+    _name = 'registro.cliente'
     _rec_name = 'name'
     cliente.id = fields.Integer('ID', required=True)
     cedula = fields.Integer('Cédula', required=True)

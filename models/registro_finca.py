@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models
 
-class registro_producto(models.Model):
+class registro_finca(models.Model):
     _name = 'registro.finca'
     _rec_name = 'name'
     finca_id = fields.Integer('ID', required=True)
