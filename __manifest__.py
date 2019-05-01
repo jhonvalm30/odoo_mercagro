@@ -12,7 +12,7 @@
     ],
     'summary': 'Mercado Agronomo Online',
     'data':[
-        'views/view_registro_clientes.xml','data/data_registro_clientes.xml',
+        'views/menu_mercagro.xml','data/data_registro_mercagro.xml',
     ],
     'installable': True,
     'auto_install': False,

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+    
+        <!--Menu items superiores-->
+        
+        <menuitem id="menu_control_mercagro" name="Mercagro" sequence="10" />
+        <menuitem id="menu_control_mercagro_registro" parent="menu_control_mercagro" name="Administración" sequence="70" />
+
+        <!--Fin Menu items superiores-->
+
+        <!--Action windows-->
+        <act_window id="action_control_finca"
+                    name="Fincas"
+                    res_model="registro.finca"
+                    view_mode="tree,form" />
+
+        <act_window id="action_control_producto"
+                    name="Producto"
+                    res_model="registro.producto"
+                    view_mode="tree,form" />
+
+        <act_window id="action_control_propietario"
+                    name="Propietarios"
+                    res_model="registro.propietario"
+                    view_mode="tree,form" />
+
+        <act_window id="action_control_cliente"
+                    name="Clientes"
+                    res_model="registro.cliente"
+                    view_mode="tree,form" />
+
+        <!--Fin Action windows-->
+
+        <!--Menu items inferiores-->
+
+        <menuitem id="menu_control_mercagro_finca"
+                  parent="menu_control_mercagro_registro"
+                  name="Finca"
+                  sequence="70"
+                  action="action_control_finca" />
+        
+        <menuitem id="menu_control_mercagro_prodcuto"
+                  parent="menu_control_mercagro_registro"
+                  name="Productos"
+                  sequence="70"
+                  action="action_control_producto" />
+
+        <menuitem id="menu_control_mercagro_propietario"
+                  parent="menu_control_mercagro_registro"
+                  name="Propietarios"
+                  sequence="70"
+                  action="action_control_propietario" />
+
+        <menuitem id="menu_control_mercagro_cliente"
+                  parent="menu_control_mercagro_registro"
+                  name="Clientes"
+                  sequence="70"
+                  action="action_control_cliente" />
+                  
+        <!--Fin Menu items inferiores-->
+
+    </data>
+</openerp>
