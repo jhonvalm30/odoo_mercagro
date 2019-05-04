@@ -68,8 +68,8 @@
                   parent="menu_control_mercagro_administracion_registro"
                   name="Pedidos"
                   sequence="70"
-                  action="action_control_cliente" /> 
-                           
+                  action="action_control_pedido" /> 
+
         <!--Fin Menu items inferiores-->
 
     </data>
