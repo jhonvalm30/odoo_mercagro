@@ -6,6 +6,6 @@ class registro_producto(models.Model):
     _rec_name = 'name'
     producto_id = fields.Integer('ID', required=True)
     name = fields.Char('Nombre producto', size=100, required=True)
-    peso = fields.Integer('Peso', required=True)
+    peso = fields.Float('Peso', required=True)
     fecha_cosecha = fields.Datetime('Fecha de cosecha', default=fields.Date.today, required=True)
 
