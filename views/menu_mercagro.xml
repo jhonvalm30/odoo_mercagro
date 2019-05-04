@@ -5,7 +5,8 @@
         <!--Menu items superiores-->
         
         <menuitem id="menu_control_mercagro" name="Mercagro" sequence="10" />
-        <menuitem id="menu_control_mercagro_registro" parent="menu_control_mercagro" name="Administración" sequence="70" />
+        <menuitem id="menu_control_mercagro_administracion" parent="menu_control_mercagro" name="Administración" sequence="70" />
+        <menuitem id="menu_control_mercagro_administracion_registro" parent="menu_control_mercagro_administracion" name="Registro" sequence="70" />
 
         <!--Fin Menu items superiores-->
 
@@ -30,34 +31,45 @@
                     res_model="registro.cliente"
                     view_mode="tree,form" />
 
+        <act_window id="action_control_pedido"
+                    name="Pedidos"
+                    res_model="registro.pedido"
+                    view_mode="tree,form" />
+
         <!--Fin Action windows-->
 
         <!--Menu items inferiores-->
 
         <menuitem id="menu_control_mercagro_finca"
-                  parent="menu_control_mercagro_registro"
+                  parent="menu_control_mercagro_administracion_registro"
                   name="Finca"
                   sequence="70"
                   action="action_control_finca" />
         
         <menuitem id="menu_control_mercagro_prodcuto"
-                  parent="menu_control_mercagro_registro"
+                  parent="menu_control_mercagro_administracion_registro"
                   name="Productos"
                   sequence="70"
                   action="action_control_producto" />
 
         <menuitem id="menu_control_mercagro_propietario"
-                  parent="menu_control_mercagro_registro"
+                  parent="menu_control_mercagro_administracion_registro"
                   name="Propietarios"
                   sequence="70"
                   action="action_control_propietario" />
 
         <menuitem id="menu_control_mercagro_cliente"
-                  parent="menu_control_mercagro_registro"
+                  parent="menu_control_mercagro_administracion_registro"
                   name="Clientes"
                   sequence="70"
                   action="action_control_cliente" />
-                  
+
+        <menuitem id="menu_control_mercagro_pedido"
+                  parent="menu_control_mercagro_administracion_registro"
+                  name="Pedidos"
+                  sequence="70"
+                  action="action_control_cliente" /> 
+                           
         <!--Fin Menu items inferiores-->
 
     </data>
