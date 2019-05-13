@@ -10,3 +10,4 @@ class registro_cliente(models.Model):
     telefono = fields.Char('Telèfono celular', required=True)
     ciudad = fields.Char('Ciudad', size=100, required=True)
     direccion = fields.Char('Dirección', size=100, required=True)
+    _sql_constraints = [('cedula_uniq', 'unique(cedula)', 'El número de identificación debe ser único.')]

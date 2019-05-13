@@ -8,3 +8,4 @@ class registro_propietario(models.Model):
     cedula = fields.Char('Cédula', required=True)
     name = fields.Char('Nombre', required=True)
     telefono = fields.Char('Teléfono celular', required=True)
+    _sql_constraints = [('cedula_uniq', 'unique(cedula)', 'El número de identificación debe ser único.')]
